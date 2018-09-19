@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npx babel ./server/index.js",
     "lint": "eslint . --ext .js,.jsx",
-    "build": "NODE_ENV=production npx env-cmd .env webpack --config ./webpack/config-prod.babel.js",
+    "build": "NODE_ENV=development npx env-cmd .env webpack --config ./webpack/config.babel.js",
     "postinstall": "npm run build",
     "test": "echo \"ERROR: NO TEST SPECIFIED\" && exit 1",
     "dev": "nodemon --exec babel-node ./server/index.js"
